@@ -8,12 +8,15 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <script src="https://unpkg.com/senangwebs-buy@latest/dist/swb.js" defer></script>
     <script src="https://unpkg.com/senangwebs-chatbot@latest/dist/swc.js" defer></script>
+    <script src="https://unpkg.com/senangwebs-gallery@latest/dist/swg.js" defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-animations@latest/dist/swa.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-buy@latest/dist/swb.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-chatbot@latest/dist/swc.css">
+    <link rel="stylesheet" href="https://unpkg.com/senangwebs-gallery@latest/dist/swg.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-modals@latest/dist/swm.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,8 +70,11 @@
             </div>
         </section>
 
-        <section class="flex items-center justify-center p-4 bg-teal-200 text-teal-600 border border-teal-600 rounded-xl my-8 mx-6 min-h-16">
-            SenangWebs Store is the demo of utilizing SenangWebs Libraries (Animations, Buy, Chatbot, Loading, Modals & Notices)
+        <section
+            class="flex items-center justify-center p-4 bg-teal-200 text-teal-600 border border-teal-600 rounded-xl my-8 mx-6 min-h-16">
+            SenangWebs Store is the demo of utilizing SenangWebs Libraries (Animations, Buy, Chatbot, Gallery, Loading,
+            Modals &
+            Notices)
         </section>
 
         <!-- Store Catalog -->
@@ -83,9 +89,20 @@
                     data-swb-product-name="iPhone 16 Plus - 128GB" data-swb-product-price="4499.99"
                     data-swb-product-add-cart-title="Add"
                     class="rounded-lg lg:rounded-2xl overflow-hidden flex flex-col justify-between border border-neutral-200 bg-white hover:border-teal-600 duration-300">
-                    <div data-swb-product-image class="aspect-w-3 aspect-h-3 rounded-t-lg overflow-hidden">
-                        <img src="./product_image.webp" alt="Wireless Headphones"
-                            class="w-full h-full object-center object-cover">
+                    <div data-swb-product-image data-swg data-swg-page
+                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-teal-600">
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer col-span-2 row-span-2">
+                            <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-95 hover:rounded-xl duration-300">
+                        </div>
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
+                            <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                        </div>
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
+                            <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                        </div>
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <div data-swb-product-name>
@@ -111,16 +128,28 @@
                     data-swb-product-name="iPhone 16 Plus - 256GB" data-swb-product-price="4999.99"
                     data-swb-product-add-cart-title="Add"
                     class="rounded-lg lg:rounded-2xl overflow-hidden flex flex-col justify-between border border-neutral-200 bg-white hover:border-teal-600 duration-300">
-                    <div data-swb-product-image class="aspect-w-3 aspect-h-3 rounded-t-lg overflow-hidden">
-                        <img src="./product_image.webp" alt="Wireless Headphones"
-                            class="w-full h-full object-center object-cover">
+                    <div data-swb-product-image data-swg data-swg-page
+                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-teal-600">
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer col-span-2 row-span-2">
+                            <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-95 hover:rounded-xl duration-300">
+                        </div>
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
+                            <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                        </div>
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
+                            <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                        </div>
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <div data-swb-product-name>
                             <h4 class="text-xl lg:text-2xl font-bold">iPhone 16 Plus - 256GB</h4>
                         </div>
                         <div data-swb-product-description class="mt-2 flex-grow">
-                            <p class="text-gray-500">Phone 16 Plus. Introducing Camera Control. 48MP Fusion camera. Five
+                            <p class="text-gray-500">Phone 16 Plus. Introducing Camera Control. 48MP Fusion camera.
+                                Five
                                 vibrant colours. And the A18 chip.
                             </p>
                         </div>
@@ -137,12 +166,24 @@
                 <!-- Product -->
                 <div data-swb-product data-swb-product-sku="iphone16plus512gb"
                     data-swb-product-name="iPhone 16 Plus - 512GB" data-swb-product-price="5999.99"
-                    data-swb-product-add-cart-title="Add" data-swb-product-link="https://www.machines.com.my/products/iphone-16-plus-512gb-teal"
+                    data-swb-product-add-cart-title="Add"
+                    data-swb-product-link="https://www.machines.com.my/products/iphone-16-plus-512gb-teal"
                     data-swb-product-link-title="Buy Now"
                     class="rounded-lg lg:rounded-2xl overflow-hidden flex flex-col justify-between border border-neutral-200 bg-white hover:border-teal-600 duration-300">
-                    <div data-swb-product-image class="aspect-w-3 aspect-h-3 rounded-t-lg overflow-hidden">
-                        <img src="./product_image.webp" alt="Wireless Headphones"
-                            class="w-full h-full object-center object-cover">
+                    <div data-swb-product-image data-swg data-swg-page
+                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-teal-600">
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer col-span-2 row-span-2">
+                            <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-95 hover:rounded-xl duration-300">
+                        </div>
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
+                            <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                        </div>
+                        <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
+                            <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
+                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                        </div>
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <div data-swb-product-name>
@@ -212,8 +253,63 @@
     <script src="https://unpkg.com/senangwebs-animations@latest/dist/swa.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Custom Chatbot Knowledge Base
+            const chatbotKnowledgeBase = [
+                {
+                    "id": "welcome",
+                    "keyword": ["hello", "hi", "hey", "start"],
+                    "reply": "Welcome to SenangWebs Store! How can I help you today?",
+                    "options": [
+                        {
+                            "label": "iPhone 16",
+                            "reply_id": "product_info"
+                        },
+                        {
+                            "label": "iPhone 15",
+                            "reply_id": "not_available"
+                        },
+                        {
+                            "label": "Macbook Pro",
+                            "reply_id": "not_available"
+                        },
+                    ]
+                },
+                {
+                    "id": "product_info",
+                    "keyword": ["iphone", "iphone 16"],
+                    "reply": "Phone 16 Plus. Introducing Camera Control. 48MP Fusion camera. Five vibrant colours. And the A18 chip.",
+                    "options": [
+                        {
+                            "label": "Thanks",
+                            "reply_id": "thanks"
+                        },
+                    ]
+                },
+                {
+                    "id": "not_available",
+                    "keyword": ["not available"],
+                    "reply": "At the moment, this product is not available.",
+                    "options": [
+                        {
+                            "label": "Back to Home",
+                            "reply_id": "welcome"
+                        },
+                    ]
+                },
+                {
+                    "id": "thanks",
+                    "keyword": ["thanks", "thank you"],
+                    "reply": "Happy Shopping!",
+                    "options": [
+                        {
+                            "label": "Back to Home",
+                            "reply_id": "welcome"
+                        },
+                    ]
+                },
+            ];
             // Initialize the SenangWebs Chatbot
-            initializeChatbot();
+            initializeChatbot(chatbotKnowledgeBase);
 
             // Configure SenangWebs Notices
             const notice = new SWN({
