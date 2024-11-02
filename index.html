@@ -60,8 +60,9 @@
                                 Open Modal
                             </button>
                             <div data-swm-body>
-                                <p class="text-gray-700">
-                                    This is a demo of using SenangWebs Modals.
+                                <p class="text-gray-700 max-w-lg">
+                                    SenangWebs Store is the demo of utilizing SenangWebs Libraries (Animations, Buy,
+                                    Chatbot, Gallery, Loading, Modals & Notices)
                                 </p>
                             </div>
                         </div>
@@ -90,18 +91,18 @@
                     data-swb-product-add-cart-title="Add"
                     class="rounded-lg lg:rounded-2xl overflow-hidden flex flex-col justify-between border border-neutral-200 bg-white hover:border-teal-600 duration-300">
                     <div data-swb-product-image data-swg data-swg-page
-                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-teal-600">
+                        class="overflow-hidden grid grid-cols-3 bg-black">
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer col-span-2 row-span-2">
                             <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-95 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
                             <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
                             <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
@@ -129,18 +130,18 @@
                     data-swb-product-add-cart-title="Add"
                     class="rounded-lg lg:rounded-2xl overflow-hidden flex flex-col justify-between border border-neutral-200 bg-white hover:border-teal-600 duration-300">
                     <div data-swb-product-image data-swg data-swg-page
-                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-teal-600">
+                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-black">
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer col-span-2 row-span-2">
                             <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-95 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
                             <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
                             <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
@@ -171,18 +172,18 @@
                     data-swb-product-link-title="Buy Now"
                     class="rounded-lg lg:rounded-2xl overflow-hidden flex flex-col justify-between border border-neutral-200 bg-white hover:border-teal-600 duration-300">
                     <div data-swb-product-image data-swg data-swg-page
-                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-teal-600">
+                        class="rounded-t-lg overflow-hidden grid grid-cols-3 bg-black">
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer col-span-2 row-span-2">
                             <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-95 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
                             <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                         <div data-swg-item data-swg-caption="Full View" class="cursor-pointer">
                             <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
-                                class="w-full h-full object-center object-cover hover:scale-90 hover:rounded-xl duration-300">
+                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
                         </div>
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
@@ -254,13 +255,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Custom Chatbot Knowledge Base
-            const chatbotKnowledgeBase = [
-                {
+            const chatbotKnowledgeBase = [{
                     "id": "welcome",
                     "keyword": ["hello", "hi", "hey", "start"],
                     "reply": "Welcome to SenangWebs Store! How can I help you today?",
-                    "options": [
-                        {
+                    "options": [{
                             "label": "iPhone 16",
                             "reply_id": "product_info"
                         },
@@ -278,34 +277,28 @@
                     "id": "product_info",
                     "keyword": ["iphone", "iphone 16"],
                     "reply": "Phone 16 Plus. Introducing Camera Control. 48MP Fusion camera. Five vibrant colours. And the A18 chip.",
-                    "options": [
-                        {
-                            "label": "Thanks",
-                            "reply_id": "thanks"
-                        },
-                    ]
+                    "options": [{
+                        "label": "Thanks",
+                        "reply_id": "thanks"
+                    }, ]
                 },
                 {
                     "id": "not_available",
                     "keyword": ["not available"],
                     "reply": "At the moment, this product is not available.",
-                    "options": [
-                        {
-                            "label": "Back to Home",
-                            "reply_id": "welcome"
-                        },
-                    ]
+                    "options": [{
+                        "label": "Back to Home",
+                        "reply_id": "welcome"
+                    }, ]
                 },
                 {
                     "id": "thanks",
                     "keyword": ["thanks", "thank you"],
                     "reply": "Happy Shopping!",
-                    "options": [
-                        {
-                            "label": "Back to Home",
-                            "reply_id": "welcome"
-                        },
-                    ]
+                    "options": [{
+                        "label": "Back to Home",
+                        "reply_id": "welcome"
+                    }, ]
                 },
             ];
             // Initialize the SenangWebs Chatbot
