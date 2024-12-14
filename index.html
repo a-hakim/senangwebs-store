@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-animations@latest/dist/swa.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-buy@latest/dist/swb.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-chatbot@latest/dist/swc.css">
+    <link rel="stylesheet" href="https://unpkg.com/senangwebs-frame@latest/dist/swf.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-gallery@latest/dist/swg.css">
     <link rel="stylesheet" href="https://unpkg.com/senangwebs-modals@latest/dist/swm.css">
 
@@ -37,51 +38,141 @@
         data-swl-bg-color="#0D9488" data-swl-bg-opacity="0.5" data-swl-bg-blur="5" data-swl-z-index="100">
     </div>
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto lg:p-8">
-
-        <section class="container mx-auto mb-8 overflow-hidden lg:rounded-xl">
-            <div class="relative flex h-screen lg:h-auto items-center justify-center">
-                <img class="w-full h-full object-cover aspect-[2/1]"
-                    src="https://images.unsplash.com/photo-1670170903245-6c2d918e5323?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                <div class="absolute mx-auto flex w-full max-w-screen-lg flex-col gap-4 items-center px-6"
-                    data-swa-group="fade-up" data-swa-group-type="sequence" data-swa-group-interval-duration="300">
-                    <h2 class="text-3xl lg:text-6xl capitalize font-bold text-white">SenangWebs Store</h2>
-                    <h3 class="text-2xl lg:text-4xl capitalize text-white">Craft Your Own Online Store</h3>
-                    <div class="flex flex-col lg:flex-row w-full justify-center pt-4 gap-4">
-                        <a href="#"
-                            class="bg-white text-teal-600 rounded-lg text-lg px-6 w-full lg:max-w-max h-12 flex items-center justify-center hover:opacity-80">Start
-                            Now</a>
-                        <div data-swm id="senangwebsmodal">
-                            <button
-                                class="border-white border-2 text-white rounded-lg text-lg px-6 w-full lg:max-w-max h-12 flex items-center justify-center hover:opacity-80"
-                                data-swm-btn data-swm-title="SenangWebs Modal" data-swm-position="center"
-                                data-swm-bg-color="#0D9488" data-swm-bg-opacity="0.5" data-swm-bg-blur="5">
-                                Open Modal
-                            </button>
-                            <div data-swm-body>
-                                <p class="text-gray-700 max-w-lg">
-                                    SenangWebs Store is the demo of utilizing SenangWebs Libraries (Animations, Buy,
-                                    Chatbot, Gallery, Loading, Modals & Notices)
-                                </p>
+    <header class="overflow-hidden">
+        <div class="relative flex h-screen lg:h-auto items-center justify-center">
+            <img class="w-full h-full object-cover aspect-[2/1]"
+                src="https://images.unsplash.com/photo-1670170903245-6c2d918e5323?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <div class="absolute mx-auto flex w-full max-w-screen-lg flex-col gap-4 items-center px-6"
+                data-swa-group="fade-up" data-swa-group-type="sequence" data-swa-group-interval-duration="300">
+                <h2 class="text-3xl lg:text-6xl capitalize font-bold text-white">SenangWebs Store</h2>
+                <h3 class="text-2xl lg:text-4xl capitalize text-white">Craft Your Own Online Store</h3>
+                <div class="flex flex-col lg:flex-row w-full justify-center pt-4 gap-4">
+                    <a href="#store"
+                        class="bg-white text-teal-600 rounded-lg text-lg px-6 w-full lg:max-w-max h-12 flex items-center justify-center hover:opacity-80">Browse
+                        Store</a>
+                    <div data-swm id="senangwebsmodal">
+                        <button
+                            class="border-white border-2 text-white rounded-lg text-lg px-6 w-full lg:max-w-max h-12 flex items-center justify-center hover:opacity-80"
+                            data-swm-btn data-swm-title="Info" data-swm-position="center" data-swm-bg-color="#0D9488"
+                            data-swm-bg-opacity="0.5" data-swm-bg-blur="5">
+                            Info
+                        </button>
+                        <div data-swm-body>
+                            <div class="grid lg:grid-cols-3 gap-2 py-2">
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Animations</p>
+                                    <p>Smooth, customizable animations for HTML elements as they enter the viewport
+                                        during scrolling. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Buy</p>
+                                    <p>Easy implementation of e-commerce functionality through HTML attributes.</p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Chatbot</p>
+                                    <p>Integrating a customizable chatbot into your website. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Epoch</p>
+                                    <p>Easy creation dynamic countdown timers and time displays. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Frame</p>
+                                    <p>Modern, responsive carousel experience with smooth transitions and intuitive
+                                        navigation. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Gallery</p>
+                                    <p>Modern, responsive modal image gallery with smooth transitions and intuitive
+                                        navigation. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Loading</p>
+                                    <p>Customizable loading screens for web applications. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Modals</p>
+                                    <p>Easy creation and customization of modal dialogs using HTML data attributes. </p>
+                                </a>
+                                <a href="#" class="bg-neutral-100 flex flex-col rounded-lg p-2">
+                                    <p class="font-bold">SenangWebs Notices</p>
+                                    <p>Replaces native browser dialogs (alert, confirm, prompt) with customizable,
+                                        modern-looking notifications. </p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="store" class="max-w-7xl mx-auto lg:p-8">
 
         <section
-            class="flex items-center justify-center p-4 bg-teal-200 text-teal-600 border border-teal-600 rounded-xl my-8 mx-6 min-h-16">
-            SenangWebs Store is the demo of utilizing SenangWebs Libraries (Animations, Buy, Chatbot, Gallery, Loading,
-            Modals &
-            Notices)
+            class="flex items-center justify-center p-4 bg-teal-200 text-teal-600 border border-teal-600 rounded-xl my-8 mx-6 lg:mt-0 min-h-16">
+            SenangWebs Store is the demo of utilizing SenangWebs Libraries
+        </section>
+
+        <section class="grid lg:grid-cols-3 gap-6 lg:gap-8 my-8 mx-6">
+            <!-- Countdown -->
+            <div class="flex flex-col border-neutral-200 p-4 rounded-xl bg-white gap-4">
+                <div class="flex-grow flex flex-col items-center justify-center">
+                    <h2 class="text-3xl lg:text-6xl font-bold">
+                        <span class="text-red-600">15%</span> OFF!
+                    </h2>
+                </div>
+                <div data-swe data-swe-countdown-end="2025-01-01 00:00:00"
+                    class="grid grid-cols-4 gap-2 bg-teal-600 text-white rounded-lg">
+                    <div class="aspect-square flex flex-col items-center justify-between py-4">
+                        <div data-swe-day data-swe-format="dd" class="text-xl font-bold"></div>
+                        <p class="text-xs">DAY</p>
+                    </div>
+                    <div class="aspect-square flex flex-col items-center justify-between py-4">
+                        <div data-swe-hour data-swe-format="HH" class="text-xl font-bold"></div>
+                        <p class="text-xs">HOUR</p>
+                    </div>
+                    <div class="aspect-square flex flex-col items-center justify-between py-4">
+                        <div data-swe-minute data-swe-format="mm" class="text-xl font-bold"></div>
+                        <p class="text-xs">MIN</p>
+                    </div>
+                    <div class="aspect-square flex flex-col items-center justify-between py-4">
+                        <div data-swe-second data-swe-format="ss" class="text-xl font-bold"></div>
+                        <p class="text-xs">SEC</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Promotion Carousel -->
+            <div class="relative rounded-xl overflow-hidden border border-neutral-200 lg:col-span-2">
+                <div data-swf class="w-full h-full">
+                    <div data-swf-items data-swf-autoplay="true" data-swf-infinite="true"
+                        data-swf-animation-speed="1000" data-swf-autoplay-delay="5000">
+                        <div data-swf-item class="bg-teal-200">
+                            <img src="https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2023/10/M3-iMac.jpg?w=1500&quality=82&strip=all&ssl=1"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div data-swf-item
+                            class="flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-100 from-10% via-sky-100 via-30% to-emerald-100 to-90%">
+                            <h2 class="text-3xl lg:text-6xl font-bold">PROMOTION</h2>
+                            <h4 class="text-xl lg:text-2xl font-semibold">Get it now!</h4>
+                        </div>
+                    </div>
+                    <div data-swf-indicators
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 p-2 bg-white bg-opacity-50 rounded-full">
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[calc(100%-3rem)]">
+                        <div data-swf-controls></div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <!-- Store Catalog -->
-        <section class="px-6" data-swb-catalog data-swb-store="SenangWebs Store" data-swb-whatsapp="+601016646234"
-            data-swb-color-primary="#0D9488" data-swb-color-secondary="#DC2626" data-swb-currency="MYR"
-            data-swb-cart="true" class="space-y-8">
+        <section class="px-6" data-swb-catalog data-swb-store-id="senangwebs-store"
+            data-swb-store="SenangWebs Store" data-swb-whatsapp="+601016646234" data-swb-color-primary="#0D9488"
+            data-swb-color-secondary="#DC2626" data-swb-currency="MYR" data-swb-cart="true" class="space-y-8">
 
             <!-- Product Grid -->
             <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
@@ -110,7 +201,8 @@
                             <h4 class="text-xl lg:text-2xl font-bold">iPhone 16 Plus - 128GB</h4>
                         </div>
                         <div data-swb-product-description class="mt-2 flex-grow">
-                            <p class="text-gray-500">Phone 16 Plus. Introducing Camera Control. 48MP Fusion camera. Five
+                            <p class="text-gray-500">Phone 16 Plus. Introducing Camera Control. 48MP Fusion camera.
+                                Five
                                 vibrant colours. And the A18 chip.
                             </p>
                         </div>
@@ -120,7 +212,35 @@
                             </div>
                             <div class="text-sm text-blue-600">In Stock</div>
                         </div>
-                        <div data-swb-product-buttons></div>
+                        <div class="grid grid-cols-2 gap-2 items-end">
+                            <div data-swm>
+                                <button
+                                    class="bg-neutral-100 text-neutral-600 rounded-lg px-6 w-full h-10 flex items-center justify-center hover:opacity-80"
+                                    data-swm-btn data-swm-title="Details" data-swm-position="center"
+                                    data-swm-bg-color="#0D9488" data-swm-bg-opacity="0.5" data-swm-bg-blur="5">
+                                    Details
+                                </button>
+                                <div data-swm-body>
+                                    <div class="flex flex-col gap-4 py-2">
+                                        <h4 class="text-xl lg:text-2xl font-bold">iPhone 16 Plus - 128GB</h4>
+                                        <p class="text-gray-500">Phone 16 Plus. Introducing Camera Control. 48MP Fusion
+                                            camera. Five
+                                            vibrant colours. And the A18 chip.
+                                        </p>
+                                        <div class="grid grid-cols-3 gap-4 p-4 bg-neutral-100 rounded-lg max-w-lg">
+                                            <img src="./product_details_top.webp" alt="iPhone 16 Plus - 128GB"
+                                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
+                                            <img src="./product_details_full.webp" alt="iPhone 16 Plus - 128GB"
+                                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
+                                            <img src="./product_details_bottom.webp" alt="iPhone 16 Plus - 128GB"
+                                                class="w-full h-full object-center object-cover hover:opacity-90 duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-swb-product-buttons></div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -248,10 +368,13 @@
         </div>
     </template>
 
+    <script src="https://unpkg.com/senangwebs-animations@latest/dist/swa.js"></script>
+    <script src="https://unpkg.com/senangwebs-epoch@latest/dist/swe.js"></script>
+    <script src="https://unpkg.com/senangwebs-frame@latest/dist/swf.js"></script>
     <script src="https://unpkg.com/senangwebs-loading@latest/dist/swl.js"></script>
     <script src="https://unpkg.com/senangwebs-modals@latest/dist/swm.js"></script>
     <script src="https://unpkg.com/senangwebs-notices@latest/dist/swn.js"></script>
-    <script src="https://unpkg.com/senangwebs-animations@latest/dist/swa.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Custom Chatbot Knowledge Base
